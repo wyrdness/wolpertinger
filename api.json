@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/wolpertinger",
     "maintainers": [
       {
@@ -16,72 +16,157 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "wolpertinger",
-    "name": "",
-    "aliases": [],
+    "name": "Wolpertinger",
+    "aliases": [
+      { "name": "Wolperdinger", "language": "Bavarian German" },
+      { "name": "Woiperdinger", "language": "Bavarian German" },
+      { "name": "Poontinger", "language": "Bavarian German" },
+      { "name": "Rasselbock", "language": "German", "region": "Thuringian Forest", "meaning": "Closely related German variant" },
+      { "name": "Skvader", "language": "Swedish", "region": "Sweden", "meaning": "Swedish equivalent (hare-grouse hybrid)" },
+      { "name": "Jackalope", "language": "English", "region": "United States (Wyoming and the American West)", "meaning": "American counterpart" }
+    ],
     "category": "CRYPTID",
-    "subcategory": "Unknown",
+    "subcategory": "Bavarian hybrid hoax-creature",
     "tags": [
+      "bavaria",
+      "germany",
+      "alpine",
       "folklore",
-      "mythology"
+      "taxidermy",
+      "tourism",
+      "hybrid-creature",
+      "tall-tale"
     ],
     "status": "documented",
     "description": {
-      "summary": "No description available.",
-      "full": ""
+      "summary": "A mythical hybrid creature of southern Bavaria and Baden-Württemberg: a small mammal — typically a rabbit or hare — fitted with antlers, fangs, wings, and other animal parts, popularised through 19th- and 20th-century 'gaff' taxidermy mounts displayed in inns and museums.",
+      "full": "The Wolpertinger is a folkloric beast of the alpine forests of Bavaria and Baden-Württemberg in southern Germany. It is conventionally depicted as a chimera with the head of a hare or rabbit, the body of a squirrel, the antlers of a deer or roebuck, the wings (and sometimes legs) of a pheasant, and prominent fangs, though the exact mix varies between specimens. The Wolpertinger is closely allied to other European hybrid creatures — the Thuringian Rasselbock, the Swedish Skvader, the Palatinate Elwedritsch, the Austrian Raurackl — and to the American Jackalope. It exists primarily as folklore and as a Bavarian taxidermy tradition: 19th-century Bavarian taxidermists assembled fanciful 'Wolpertinger' mounts from parts of multiple animals as inn decoration and tourist amusement, and these mounts remain staples of mountain-region inns and souvenir shops. The Deutsches Jagd- und Fischereimuseum (German Hunting and Fishing Museum) in Munich maintains a permanent display of Wolpertinger specimens. Some 17th-century European woodcuts of horned hares are now thought to depict real rabbits afflicted with the Shope papilloma virus, which produces horn-like growths and may have helped seed the Wolpertinger and Jackalope traditions."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Origin of the Bavarian name is uncertain; one proposed derivation is from glassmakers of the village of Wolterdingen, who produced animal-shaped schnapps glasses called 'Wolterdinger'.",
+      "meaning": "The exact meaning is unclear; popularly understood simply as the proper name of the creature.",
+      "first_use": "Bavarian folk usage from at least the 19th century; Wolpertinger taxidermy mounts attested in 1800s Bavaria."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "CRYPTID",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Folkloric chimera",
+      "subtype": "Hybrid antlered hare",
+      "variant": "Bavarian / Baden-Württemberg"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "jackalope", "name": "Jackalope", "relationship": "regional_variant", "description": "American antlered hare, popularised in 1930s Wyoming" },
+      { "id": "skvader", "name": "Skvader", "relationship": "similar", "description": "Swedish hare/grouse hybrid (1918 taxidermy mount by Rudolf Granberg)" },
+      { "id": "rasselbock", "name": "Rasselbock", "relationship": "regional_variant", "description": "Thuringian Forest cousin of the Wolpertinger" },
+      { "id": "elwedritsch", "name": "Elwedritsch", "relationship": "similar", "description": "Palatinate German hybrid creature" },
+      { "id": "raurackl", "name": "Raurackl", "relationship": "similar", "description": "Austrian counterpart of the Wolpertinger" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.2, "max": 0.4, "unit": "meters", "confidence": "low" },
+      "coloration": ["brown", "grey-brown", "varies with the animals used in mounts"],
+      "features": [
+        { "feature": "Hare/rabbit head", "description": "The base body is most often that of a hare or rabbit", "frequency": "always" },
+        { "feature": "Antlers", "description": "Roebuck or stag antlers attached to the skull", "frequency": "always" },
+        { "feature": "Wings", "description": "Pheasant or other game-bird wings — and sometimes legs — fitted to the body", "frequency": "common" },
+        { "feature": "Fangs", "description": "Prominent fangs, often boar tusks or carved replacements", "frequency": "common" },
+        { "feature": "Squirrel body / mixed parts", "description": "Many mounts use a squirrel body or mix in other forest animals", "frequency": "common" }
+      ],
+      "morphology": "A composite chimera assembled from parts of native Bavarian forest animals; no two mounts are exactly alike."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Reclusiveness", "description": "Said in folklore to inhabit deep alpine forests, glimpsed only by hunters and only by the truly fortunate", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Visibility only to specific people", "description": "Bavarian tradition holds that the Wolpertinger can be sighted only by a beautiful young woman in the company of a young man, a humorous pretext used to entertain inn guests", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "crepuscular",
+      "disposition": "neutral",
+      "social_structure": "solitary",
+      "habitat_preference": [
+        "alpine forests",
+        "mixed woodland of southern Germany",
+        "Bavarian Alps and pre-Alps",
+        "Baden-Württemberg uplands"
+      ],
+      "diet": "Implicitly herbivorous (consistent with hare base)",
+      "patterns": [
+        "Said to be glimpsed only by hunters in deep forest",
+        "Heavily promoted as a tourism attraction in Bavarian inns",
+        "Most commonly encountered in the form of taxidermy mounts behind inn bars"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Folkloric range is the alpine and pre-alpine forests of southern Germany, particularly Bavaria and Baden-Württemberg, with extensions into the broader Alpine region.",
+      "continents": ["Europe"],
+      "countries": ["Germany"],
+      "regions": [
+        "Bavaria",
+        "Baden-Württemberg",
+        "Bavarian Alps",
+        "Bavarian Forest",
+        "Black Forest"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Deutsches Jagd- und Fischereimuseum",
+        "location": {
+          "description": "German Hunting and Fishing Museum, Neuhauser Straße 2",
+          "country": "Germany",
+          "region": "Munich, Bavaria"
+        },
+        "peak_period": "20th century–present",
+        "notes": "Maintains a permanent Wolpertinger exhibit"
+      },
+      {
+        "name": "Wolterdingen",
+        "location": {
+          "description": "Village of Wolterdingen",
+          "country": "Germany",
+          "region": "Baden-Württemberg"
+        },
+        "peak_period": "19th century–present",
+        "notes": "Proposed etymological origin of the name (Wolterdinger schnapps glasses)"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1800",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Bavarian taxidermy and tourism tradition; the creature is attested in Bavarian folk usage from the 19th century"
+      },
+      "peak_activity_periods": [
+        { "period": "19th century", "description": "Bavarian taxidermists begin producing Wolpertinger mounts for inns and tourists" },
+        { "period": "20th century–present", "description": "Wolpertinger becomes an iconic Bavarian tourism motif and museum exhibit" }
+      ],
+      "seasonal_patterns": "Not specified; the figure is largely tied to year-round inn culture and seasonal hunting humour."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Bavarian rural and hunting culture, with deep connections to the broader European tradition of horned-hare imagery (as seen in some 17th-century European woodcuts) and to the Alpine pattern of fanciful hybrid creatures.",
+      "earliest_accounts": "Earliest visual records of horned-hare figures appear in 17th-century European woodcuts; Wolpertinger taxidermy mounts emerge in 19th-century Bavaria.",
+      "folklore_connections": "Forms a recognisable family with the Thuringian Rasselbock, the Austrian Raurackl, the Palatinate Elwedritsch, the Swedish Skvader (1918), and the American Jackalope, all united by the antlered-rabbit motif."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1600", "event": "European woodcuts and engravings of horned hares circulate; some images are now thought to reflect rabbits affected by Shope papilloma virus", "significance": "Earliest visual antecedents of the antlered-rabbit motif", "source": "Wikipedia, 'Wolpertinger'" },
+      { "date": "1800", "event": "Bavarian taxidermists begin producing Wolpertinger gaff mounts for inns and tourists", "significance": "Foundation of the Wolpertinger as a living folk-tourism tradition", "source": "Wikipedia, 'Wolpertinger'" },
+      { "date": "1918", "event": "Swedish taxidermist Rudolf Granberg creates the Skvader, a parallel European hybrid creature", "significance": "Demonstrates the wider European context of antlered/winged hare gaff creatures", "source": "Wikipedia, 'Wolpertinger'" }
+    ],
+    "modern_era": "The Wolpertinger persists as a Bavarian regional icon: a feature of pubs and Gasthäuser, a permanent museum exhibit at the Deutsches Jagd- und Fischereimuseum in Munich, and a recurring image in regional souvenirs, beer brands, and tourist marketing. It is universally recognised as folkloric humour rather than as a serious cryptid claim."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +177,91 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
-    "physical": [],
+    "physical": [
+      {
+        "id": "wolpertinger-evidence-jagdmuseum",
+        "type": "taxidermy mount",
+        "name": "Deutsches Jagd- und Fischereimuseum Wolpertinger collection",
+        "description": "Permanent exhibition of Wolpertinger gaff specimens at the German Hunting and Fishing Museum in Munich.",
+        "location": "Munich, Germany",
+        "status": "verified",
+        "analysis": "Physical specimens are openly acknowledged as composite gaff taxidermy assembled from real animal parts.",
+        "source": "Wikipedia, 'Wolpertinger'"
+      }
+    ],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": []
   },
+
   "theories": {
     "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "scientific": [
+      {
+        "name": "Shope papilloma virus seed",
+        "description": "Some 17th-century European images of horned hares may depict real rabbits infected with the Shope papilloma virus, which produces horn- or antler-like keratinous growths from the head — a plausible biological seed for the antlered-hare motif behind the Wolpertinger and Jackalope.",
+        "proponents": ["Modern zoologists and folklorists"],
+        "evidence_cited": ["Documented Shope papilloma virus pathology", "Persistence of the antlered-hare motif in European visual culture"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Hoax taxidermy and tourist humour",
+        "description": "The Wolpertinger is openly understood as a 'gaff' creature: a chimera assembled by Bavarian taxidermists for inn decoration and tourist humour. Its status as folklore is uncontroversial.",
+        "proponents": ["General folklorist consensus"],
+        "evidence_cited": ["Open practice of composite-mount fabrication", "Use of the Wolpertinger as a teasing tale told to tourists in Bavarian inns"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Bavarian inn and Gasthaus tradition of displaying Wolpertinger mounts",
+        "Tall tales of Wolpertinger hunting told to tourists",
+        "Family of antlered-rabbit hybrid creatures across the Alps and Northern Europe"
+      ],
+      "stories": [
+        "The Wolpertinger appearing only to a beautiful young woman accompanied by a young man",
+        "Tourist 'hunts' for the Wolpertinger as humorous regional ritual"
+      ],
+      "beliefs": "The Wolpertinger is a clearly tongue-in-cheek figure: it functions as folklore, tourist humour, and regional iconography, not as a sincere cryptozoological claim."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Numerous Bavarian and Alpine folklore collections feature the Wolpertinger",
+        "Marketing materials and souvenir publications across southern Germany"
+      ],
+      "film_tv": [
+        "Recurring appearances in Bavarian and German regional television comedies"
+      ],
+      "games": [
+        "World of Warcraft — 'Wolpertinger' pet companion (Brewfest reward)",
+        "Various indie games and tabletop bestiaries"
+      ],
+      "music": [],
+      "other": [
+        "Wolpertinger-branded beers, schnapps, and souvenirs",
+        "Permanent exhibit at the Deutsches Jagd- und Fischereimuseum, Munich"
+      ]
     }
   },
+
   "research": {
     "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "organizations": [
+      { "name": "Deutsches Jagd- und Fischereimuseum (German Hunting and Fishing Museum)", "url": "https://www.jagd-fischerei-museum.de/", "focus": "Maintains the canonical museum collection of Wolpertinger taxidermy specimens" }
+    ],
+    "ongoing_studies": "No active scientific research; the Wolpertinger is studied only as folklore and as taxidermy / cultural-history."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-wolpertinger", "type": "website", "title": "Wolpertinger — Wikipedia", "url": "https://en.wikipedia.org/wiki/Wolpertinger", "accessed": "2026-05-07" },
+    { "id": "wikipedia-jackalope", "type": "website", "title": "Jackalope — Wikipedia", "url": "https://en.wikipedia.org/wiki/Jackalope", "accessed": "2026-05-07" },
+    { "id": "wikipedia-skvader", "type": "website", "title": "Skvader — Wikipedia", "url": "https://en.wikipedia.org/wiki/Skvader", "accessed": "2026-05-07" }
+  ]
 }
